@@ -1,0 +1,553 @@
+采埃孚20240224_0300_log
+
+I0224 03:15:08.354875 10432 tcp_server.py:122] recv from client, len: 9, msg: b'528,1,0,#'
+I0224 03:15:08.354875 10432 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,1,0,#'
+I0224 03:15:08.354875 10432 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+W0224 03:15:08.354875 10432 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+}
+I0224 03:15:09.058993 10432 virtual_handler.py:29] switch_item(): execute in 0.7041 s
+I0224 03:15:09.058993 10432 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:15:09.058993 10432 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:15:09.066970 10432 tcp_server.py:122] recv from client, len: 7, msg: b'517,1,#'
+I0224 03:15:09.066970 10432 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,1,#'
+I0224 03:15:09.067967 10432 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+W0224 03:15:09.067967 10432 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+}
+I0224 03:15:09.067967 10432 virtual_handler.py:29] request_pick_place(): execute in 0.0000 s
+I0224 03:15:09.067967 10432 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:15:09.067967 10432 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:15:09.077941 10432 tcp_server.py:122] recv from client, len: 7, msg: b'518,1,#'
+I0224 03:15:09.077941 10432 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,1,#'
+I0224 03:15:09.077941 10432 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+W0224 03:15:09.077941 10432 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+}
+E0224 03:15:12.128785 10432 request_handler.py:571]
+I0224 03:15:12.128785 10432 virtual_handler.py:29] get_pick_in(): execute in 3.0508 s
+I0224 03:15:12.128785 10432 runtime_tcp_server.py:219] response from Task:
+error_code: 60032
+pipeline_num: 0
+register_num: 0
+way_points_num: 0
+way_points: []
+I0224 03:15:12.128785 10432 runtime_tcp_server.py:226] server send string to client done: b'60032,0,0,0,#'
+I0224 03:15:23.927515 10432 tcp_server.py:122] recv from client, len: 9, msg: b'528,0,2,#'
+I0224 03:15:23.927515 10432 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,0,2,#'
+I0224 03:15:23.928509 10432 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+W0224 03:15:23.928509 10432 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+}
+I0224 03:15:24.641638 10432 virtual_handler.py:29] switch_item(): execute in 0.7131 s
+I0224 03:15:24.641638 10432 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:15:24.641638 10432 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+
+
+
+##########################################################
+I0224 03:16:41.238236 1144 robot_server.py:38] xyz_robot_server uses cfg: C:/Users/xyz/Documents/XYZRobotics/3D-轨迹移动-眼在手外2023.12.29/robot_configs/robot_server_config.yml
+W0224 03:16:41.243220 1144 robot_server.py:51] robot_server is running in CommunicationType.TCP_SERVER, RequestHandlerType.STANDARD
+I0224 03:16:41.408778 1144 request_handler.py:43] [RequestHandler] using vp_task_service_port
+I0224 03:16:41.408778 1144 request_handler.py:56] task bridge inited
+W0224 03:16:41.502523 1144 runtime_tcp_server.py:149] tcp server is running on 0.0.0.0: 11111
+W0224 03:16:41.502523 1144 runtime_tcp_server.py:152] wait for new client...
+W0224 03:18:59.978999 1144 runtime_tcp_server.py:163] accepted connection from ('192.168.125.190', 63899)
+W0224 03:18:59.979992 1144 runtime_tcp_server.py:83] please close current connection before accepting a new one
+I0224 03:18:59.980990 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,0,2,#'
+I0224 03:18:59.980990 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,0,2,#'
+I0224 03:18:59.980990 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+W0224 03:18:59.980990 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+}
+I0224 03:18:59.980990 1144 request_handler.py:82] vp_task_service_port: 12345
+I0224 03:19:00.660178 1144 virtual_handler.py:29] switch_item(): execute in 0.6792 s
+I0224 03:19:00.660178 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:19:00.660178 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:19:00.666163 1144 tcp_server.py:122] recv from client, len: 7, msg: b'517,0,#'
+I0224 03:19:00.666163 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,0,#'
+I0224 03:19:00.666163 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 0
+W0224 03:19:00.666163 1144 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 0
+}
+I0224 03:19:00.666163 1144 virtual_handler.py:29] request_pick_place(): execute in 0.0000 s
+I0224 03:19:00.667155 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:19:00.667155 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:19:00.674141 1144 tcp_server.py:122] recv from client, len: 7, msg: b'518,0,#'
+I0224 03:19:00.674141 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,0,#'
+I0224 03:19:00.674141 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 0
+W0224 03:19:00.675143 1144 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 0
+}
+E0224 03:19:06.902489 1144 request_handler.py:571]
+I0224 03:19:06.902489 1144 virtual_handler.py:29] get_pick_in(): execute in 6.2273 s
+I0224 03:19:06.902489 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 60033
+pipeline_num: 0
+register_num: 0
+way_points_num: 0
+way_points: []
+I0224 03:19:06.902489 1144 runtime_tcp_server.py:226] server send string to client done: b'60033,0,0,0,#'
+I0224 03:19:07.029150 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,1,0,#'
+I0224 03:19:07.029150 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,1,0,#'
+I0224 03:19:07.029150 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+W0224 03:19:07.029150 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+}
+I0224 03:19:07.677417 1144 virtual_handler.py:29] switch_item(): execute in 0.6483 s
+I0224 03:19:07.677417 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:19:07.677417 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:19:07.683396 1144 tcp_server.py:122] recv from client, len: 7, msg: b'517,1,#'
+I0224 03:19:07.683396 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,1,#'
+I0224 03:19:07.683396 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+W0224 03:19:07.683396 1144 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+}
+I0224 03:19:07.684393 1144 virtual_handler.py:29] request_pick_place(): execute in 0.0010 s
+I0224 03:19:07.684393 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:19:07.684393 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:19:07.692373 1144 tcp_server.py:122] recv from client, len: 7, msg: b'518,1,#'
+I0224 03:19:07.692373 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,1,#'
+I0224 03:19:07.692373 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+W0224 03:19:07.692373 1144 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+}
+E0224 03:19:11.103258 1144 request_handler.py:571]
+I0224 03:19:11.103258 1144 virtual_handler.py:29] get_pick_in(): execute in 3.4109 s
+I0224 03:19:11.103258 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 60032
+pipeline_num: 0
+register_num: 0
+way_points_num: 0
+way_points: []
+I0224 03:19:11.104251 1144 runtime_tcp_server.py:226] server send string to client done: b'60032,0,0,0,#'
+I0224 03:19:22.986487 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,0,2,#'
+I0224 03:19:22.986487 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,0,2,#'
+I0224 03:19:22.986487 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+W0224 03:19:22.986487 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+}
+I0224 03:19:23.632755 1144 virtual_handler.py:29] switch_item(): execute in 0.6463 s
+I0224 03:19:23.632755 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:19:23.632755 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:23.252681 1144 tcp_server.py:122] recv from client, len: 7, msg: b'517,0,#'
+I0224 03:20:23.252681 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,0,#'
+I0224 03:20:23.252681 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 0
+W0224 03:20:23.252681 1144 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 0
+}
+I0224 03:20:23.253675 1144 virtual_handler.py:29] request_pick_place(): execute in 0.0010 s
+I0224 03:20:23.253675 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:23.253675 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:23.260670 1144 tcp_server.py:122] recv from client, len: 7, msg: b'518,0,#'
+I0224 03:20:23.260670 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,0,#'
+I0224 03:20:23.260670 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 0
+W0224 03:20:23.260670 1144 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 0
+}
+E0224 03:20:26.426197 1144 request_handler.py:571]
+I0224 03:20:26.426197 1144 virtual_handler.py:29] get_pick_in(): execute in 3.1655 s
+I0224 03:20:26.426197 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 60033
+pipeline_num: 0
+register_num: 0
+way_points_num: 0
+way_points: []
+I0224 03:20:26.426197 1144 runtime_tcp_server.py:226] server send string to client done: b'60033,0,0,0,#'
+I0224 03:20:26.663561 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,1,0,#'
+I0224 03:20:26.663561 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,1,0,#'
+I0224 03:20:26.663561 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+W0224 03:20:26.663561 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+}
+I0224 03:20:27.299917 1144 virtual_handler.py:29] switch_item(): execute in 0.6364 s
+I0224 03:20:27.299917 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:27.299917 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:27.306897 1144 tcp_server.py:122] recv from client, len: 7, msg: b'517,1,#'
+I0224 03:20:27.306897 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,1,#'
+I0224 03:20:27.306897 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+W0224 03:20:27.306897 1144 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+}
+I0224 03:20:27.307894 1144 virtual_handler.py:29] request_pick_place(): execute in 0.0010 s
+I0224 03:20:27.307894 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:27.308890 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:27.315874 1144 tcp_server.py:122] recv from client, len: 7, msg: b'518,1,#'
+I0224 03:20:27.315874 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,1,#'
+I0224 03:20:27.316872 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+W0224 03:20:27.316872 1144 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+}
+I0224 03:20:30.782602 1144 virtual_handler.py:29] get_pick_in(): execute in 3.4657 s
+I0224 03:20:30.782602 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+pipeline_num: 0
+register_num: 0
+way_points_num: 3
+way_points: [
+way_point_type: WayPointType.JOINTS_MOVEJ
+way_point: [-53.5299991104254, -94.85999628764407, 123.83000459563219, -2.449999954340975, 62.66999774829097, 41.92999855995302],
+way_point_type: WayPointType.JOINTS_MOVEJ
+way_point: [-62.99102346947073, -86.29931721970605, 124.70943243240636, 2.520944275476251, 52.00405288757451, 25.467084320444563],
+way_point_type: WayPointType.JOINTS_MOVEL
+way_point: [-62.745765036753916, -81.82339180375914, 128.18547962556593, 2.859802126475043, 44.05234665584567, 25.20883486792638]]
+I0224 03:20:30.783604 1144 runtime_tcp_server.py:226] server send string to client done: b'0,0,0,3,11,-53.53,-94.86,123.83,-2.45,62.67,41.93,11,-62.99,-86.3,124.71,2.52,52.0,25.47,12,-62.75,-81.82,128.19,2.86,44.05,25.21,#'
+I0224 03:20:32.105069 1144 tcp_server.py:122] recv from client, len: 7, msg: b'519,1,#'
+I0224 03:20:32.106067 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'519,1,#'
+I0224 03:20:32.106067 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_OUT
+vs_id: 1
+W0224 03:20:32.106067 1144 virtual_handler.py:115] running: get_pick_out{
+cmd: CommandType.GET_PICK_OUT
+vs_id: 1
+}
+I0224 03:20:32.117039 1144 virtual_handler.py:29] get_pick_out(): execute in 0.0110 s
+I0224 03:20:32.117039 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+pipeline_num: 0
+register_num: 0
+way_points_num: 2
+way_points: [
+way_point_type: WayPointType.JOINTS_MOVEL
+way_point: [-62.99102346947073, -86.29931721970605, 124.70943243240636, 2.520944275476251, 52.00405288757451, 25.467084320444563],
+way_point_type: WayPointType.JOINTS_MOVEJ
+way_point: [-62.75206247116867, -85.86725994337856, 125.20037276956853, 2.5557464371749936, 51.07373331129458, 25.652243918654438]]
+I0224 03:20:32.117039 1144 runtime_tcp_server.py:226] server send string to client done: b'0,0,0,2,12,-62.99,-86.3,124.71,2.52,52.0,25.47,11,-62.75,-85.87,125.2,2.56,51.07,25.65,#'
+I0224 03:20:34.259340 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,0,2,#'
+I0224 03:20:34.259340 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,0,2,#'
+I0224 03:20:34.259340 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+W0224 03:20:34.260328 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+}
+I0224 03:20:34.977422 1144 virtual_handler.py:29] switch_item(): execute in 0.7171 s
+I0224 03:20:34.977422 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:34.977422 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:34.985520 1144 tcp_server.py:122] recv from client, len: 7, msg: b'517,0,#'
+I0224 03:20:34.985520 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,0,#'
+I0224 03:20:34.985520 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 0
+W0224 03:20:34.985520 1144 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 0
+}
+I0224 03:20:34.986398 1144 virtual_handler.py:29] request_pick_place(): execute in 0.0009 s
+I0224 03:20:34.986398 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:34.986398 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:35.036233 1144 tcp_server.py:122] recv from client, len: 7, msg: b'518,0,#'
+I0224 03:20:35.036233 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,0,#'
+I0224 03:20:35.036233 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 0
+W0224 03:20:35.036233 1144 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 0
+}
+E0224 03:20:38.051168 1144 request_handler.py:571]
+I0224 03:20:38.051168 1144 virtual_handler.py:29] get_pick_in(): execute in 3.0139 s
+I0224 03:20:38.051168 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 60033
+pipeline_num: 0
+register_num: 0
+way_points_num: 0
+way_points: []
+I0224 03:20:38.051168 1144 runtime_tcp_server.py:226] server send string to client done: b'60033,0,0,0,#'
+I0224 03:20:38.579759 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,1,0,#'
+I0224 03:20:38.579759 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,1,0,#'
+I0224 03:20:38.579759 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+W0224 03:20:38.579759 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+}
+I0224 03:20:39.296839 1144 virtual_handler.py:29] switch_item(): execute in 0.7171 s
+I0224 03:20:39.296839 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:39.296839 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:39.305818 1144 tcp_server.py:122] recv from client, len: 7, msg: b'517,1,#'
+I0224 03:20:39.305818 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,1,#'
+I0224 03:20:39.305818 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+W0224 03:20:39.305818 1144 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+}
+I0224 03:20:39.306813 1144 virtual_handler.py:29] request_pick_place(): execute in 0.0010 s
+I0224 03:20:39.306813 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:39.306813 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:39.314794 1144 tcp_server.py:122] recv from client, len: 7, msg: b'518,1,#'
+I0224 03:20:39.314794 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,1,#'
+I0224 03:20:39.314794 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+W0224 03:20:39.314794 1144 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+}
+I0224 03:20:42.553165 1144 virtual_handler.py:29] get_pick_in(): execute in 3.2384 s
+I0224 03:20:42.553165 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+pipeline_num: 0
+register_num: 0
+way_points_num: 3
+way_points: [
+way_point_type: WayPointType.JOINTS_MOVEJ
+way_point: [-53.5299991104254, -94.85999628764407, 123.83000459563219, -2.449999954340975, 62.66999774829097, 41.92999855995302],
+way_point_type: WayPointType.JOINTS_MOVEJ
+way_point: [-63.65526619644365, -83.57856600534483, 126.87738911648177, 2.55115996514733, 46.940942938870776, 24.61285988170775],
+way_point_type: WayPointType.JOINTS_MOVEL
+way_point: [-63.425430330872715, -78.48602477150752, 129.85307031142455, 2.9716488220115287, 38.874561246072005, 24.27092695147857]]
+I0224 03:20:42.554131 1144 runtime_tcp_server.py:226] server send string to client done: b'0,0,0,3,11,-53.53,-94.86,123.83,-2.45,62.67,41.93,11,-63.66,-83.58,126.88,2.55,46.94,24.61,12,-63.43,-78.49,129.85,2.97,38.87,24.27,#'
+I0224 03:20:43.832714 1144 tcp_server.py:122] recv from client, len: 7, msg: b'519,1,#'
+I0224 03:20:43.832714 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'519,1,#'
+I0224 03:20:43.832714 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_OUT
+vs_id: 1
+W0224 03:20:43.832714 1144 virtual_handler.py:115] running: get_pick_out{
+cmd: CommandType.GET_PICK_OUT
+vs_id: 1
+}
+I0224 03:20:43.842684 1144 virtual_handler.py:29] get_pick_out(): execute in 0.0100 s
+I0224 03:20:43.842684 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+pipeline_num: 0
+register_num: 0
+way_points_num: 2
+way_points: [
+way_point_type: WayPointType.JOINTS_MOVEL
+way_point: [-63.65526619644365, -83.57856600534483, 126.87738911648177, 2.55115996514733, 46.940942938870776, 24.61285988170775],
+way_point_type: WayPointType.JOINTS_MOVEJ
+way_point: [-63.42394134963365, -85.77805084262901, 125.1656890689632, 2.4049320183197036, 50.84098095494806, 25.06754045211362]]
+I0224 03:20:43.842684 1144 runtime_tcp_server.py:226] server send string to client done: b'0,0,0,2,12,-63.66,-83.58,126.88,2.55,46.94,24.61,11,-63.42,-85.78,125.17,2.4,50.84,25.07,#'
+I0224 03:20:46.031835 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,0,2,#'
+I0224 03:20:46.031835 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,0,2,#'
+I0224 03:20:46.031835 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+W0224 03:20:46.031835 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+}
+I0224 03:20:46.755928 1144 virtual_handler.py:29] switch_item(): execute in 0.7241 s
+I0224 03:20:46.755928 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:46.755928 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:46.762881 1144 tcp_server.py:122] recv from client, len: 7, msg: b'517,0,#'
+I0224 03:20:46.762881 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,0,#'
+I0224 03:20:46.763879 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 0
+W0224 03:20:46.763879 1144 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 0
+}
+I0224 03:20:46.763879 1144 virtual_handler.py:29] request_pick_place(): execute in 0.0000 s
+I0224 03:20:46.763879 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:46.764871 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:46.801777 1144 tcp_server.py:122] recv from client, len: 7, msg: b'518,0,#'
+I0224 03:20:46.801777 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,0,#'
+I0224 03:20:46.801777 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 0
+W0224 03:20:46.801777 1144 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 0
+}
+E0224 03:20:49.838654 1144 request_handler.py:571]
+I0224 03:20:49.838654 1144 virtual_handler.py:29] get_pick_in(): execute in 3.0369 s
+I0224 03:20:49.838654 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 60033
+pipeline_num: 0
+register_num: 0
+way_points_num: 0
+way_points: []
+I0224 03:20:49.838654 1144 runtime_tcp_server.py:226] server send string to client done: b'60033,0,0,0,#'
+I0224 03:20:50.364248 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,1,0,#'
+I0224 03:20:50.364248 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,1,0,#'
+I0224 03:20:50.364248 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+W0224 03:20:50.364248 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 1
+item_codename: 0
+}
+I0224 03:20:51.080334 1144 virtual_handler.py:29] switch_item(): execute in 0.7161 s
+I0224 03:20:51.080334 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:51.080334 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:51.088313 1144 tcp_server.py:122] recv from client, len: 7, msg: b'517,1,#'
+I0224 03:20:51.089310 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'517,1,#'
+I0224 03:20:51.089310 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+W0224 03:20:51.089310 1144 virtual_handler.py:115] running: request_pick_place{
+cmd: CommandType.REQ_PICK_PLACE
+vs_id: 1
+}
+I0224 03:20:51.089310 1144 virtual_handler.py:29] request_pick_place(): execute in 0.0000 s
+I0224 03:20:51.089310 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:20:51.089310 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:20:51.099287 1144 tcp_server.py:122] recv from client, len: 7, msg: b'518,1,#'
+I0224 03:20:51.099287 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'518,1,#'
+I0224 03:20:51.099287 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+W0224 03:20:51.099287 1144 virtual_handler.py:115] running: get_pick_in{
+cmd: CommandType.GET_PICK_IN
+vs_id: 1
+}
+E0224 03:20:54.196005 1144 request_handler.py:571]
+I0224 03:20:54.196005 1144 virtual_handler.py:29] get_pick_in(): execute in 3.0967 s
+I0224 03:20:54.196005 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 60032
+pipeline_num: 0
+register_num: 0
+way_points_num: 0
+way_points: []
+I0224 03:20:54.196005 1144 runtime_tcp_server.py:226] server send string to client done: b'60032,0,0,0,#'
+I0224 03:50:55.722059 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,0,2,#'
+I0224 03:50:55.722059 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,0,2,#'
+I0224 03:50:55.722059 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+W0224 03:50:55.722059 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+}
+I0224 03:50:56.455095 1144 virtual_handler.py:29] switch_item(): execute in 0.7330 s
+I0224 03:50:56.455095 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:50:56.455095 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+I0224 03:51:30.755744 1144 tcp_server.py:122] recv from client, len: 0, msg: b''
+E0224 03:51:30.755744 1144 tcp_server.py:124] socket is disconnected
+E0224 03:51:30.755744 1144 runtime_tcp_server.py:253]
+I0224 03:51:30.755744 1144 tcp_server.py:77] close client ('192.168.125.190', 63899)
+E0224 03:51:30.755744 1144 runtime_tcp_server.py:232] disconnected with robot/plc: ('192.168.125.190', 63899)
+W0224 03:51:30.755744 1144 runtime_tcp_server.py:235] wait for new client...
+W0224 03:53:43.090353 1144 runtime_tcp_server.py:163] accepted connection from ('192.168.125.190', 62473)
+W0224 03:53:43.091349 1144 runtime_tcp_server.py:83] please close current connection before accepting a new one
+I0224 03:53:43.092344 1144 tcp_server.py:122] recv from client, len: 9, msg: b'528,0,2,#'
+I0224 03:53:43.092344 1144 runtime_tcp_server.py:193] raw msg from robot/plc: b'528,0,2,#'
+I0224 03:53:43.092344 1144 runtime_tcp_server.py:213] request from robo/plc:
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+W0224 03:53:43.092344 1144 virtual_handler.py:115] running: switch_item{
+cmd: CommandType.SWITCH_ITEM
+vs_id: 0
+item_codename: 2
+}
+I0224 03:53:43.797458 1144 virtual_handler.py:29] switch_item(): execute in 0.7051 s
+I0224 03:53:43.797458 1144 runtime_tcp_server.py:219] response from Task:
+error_code: 0
+I0224 03:53:43.797458 1144 runtime_tcp_server.py:226] server send string to client done: b'0,#'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
